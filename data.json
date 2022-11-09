@@ -1,0 +1,78 @@
+{
+    "profile": {
+        "chinese_name": "張宇鈞",
+        "english_name": "Chang Yu Chun",
+        "contact_number": "0936955317",
+        "email": "changyuchun159630@gmail.com",
+        "birthday": "1992-09-05",
+        "description": "",
+        "image": ""
+    },
+    "social": [
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/yu-chun-chang-159630/",
+            "className": "fa fa-linkedin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/KyleChang95",
+            "className": "fa fa-github"
+        }
+    ],
+    "skill": {
+        "Backend": {
+
+        },
+        "Frontend": {
+
+        },
+        "DevOps": {
+
+        }
+    },
+    "work": [
+        {
+            "company": "Institute for Information Industry (資策會)",
+            "title": "Assistant Engineer",
+            "start": "2017-09",
+            "end": "2020-06",
+            "image": "",
+            "description" : ""
+        },
+        {
+            "company": "Acer Inc. (宏碁)",
+            "title": "Cloud Solutions Engineer",
+            "start": "2020-09",
+            "end": "now",
+            "image": "",
+            "description" : ""
+        }
+    ],
+    "training": [
+        {
+            "name": "",
+            "date": "",
+            "image": ""
+        }
+    ],
+    "education": [
+        {
+            "school": "",
+            "degree": "",
+            "department": "",
+            "start": "",
+            "end": "",
+            "status": "graduate"
+        }
+    ],
+    "competition": [
+
+    ],
+    "paper": [
+
+    ],
+    "project": [
+        
+    ]
+}
