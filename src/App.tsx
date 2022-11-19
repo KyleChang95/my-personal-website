@@ -1,6 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+// Roboto font
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import Competition from './components/Competition';
 import Education from './components/Education';
 import Layout from './components/Layout';
