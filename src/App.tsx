@@ -15,11 +15,12 @@ import Project from './components/Project';
 import Skill from './components/Skill';
 import Training from './components/Training';
 import Work from './components/Work';
+import jsonData from './data.json'
 
 const menuList: { [key: string]: React.ReactNode} = {
   profile: <Profile />,
   skill: <Skill />,
-  work: <Work />,
+  work: <Work workList={jsonData.work} />,
   project: <Project />,
   training: <Training />,
   education: <Education />,
