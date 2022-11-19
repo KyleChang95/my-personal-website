@@ -38,7 +38,7 @@
             "start": "2017-09",
             "end": "2020-06",
             "image": "",
-            "description" : ""
+            "description": ""
         },
         {
             "company": "Acer Inc. (宏碁)",
@@ -46,7 +46,7 @@
             "start": "2020-09",
             "end": "now",
             "image": "",
-            "description" : ""
+            "description": ""
         }
     ],
     "training": [
