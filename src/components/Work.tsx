@@ -41,7 +41,7 @@ const convertToTimelineItem = (workList: WorkModel[]) => {
     )
 }
 
-const Work = (props: Props) => {
+export default function Work(props: Props) {
     return (
         <Box
             sx={{
@@ -81,5 +81,3 @@ const Work = (props: Props) => {
         </Box>
     );
 }
-
-export default Work

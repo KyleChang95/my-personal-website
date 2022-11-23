@@ -29,7 +29,7 @@ const setCard = (title: string, items: string[]) => {
     )
 }
 
-const Skill = (props: Props) => {
+export default function Skill(props: Props) {
     return (
         <Box
             sx={{
@@ -65,5 +65,3 @@ const Skill = (props: Props) => {
         </Box>
     );
 }
-
-export default Skill
