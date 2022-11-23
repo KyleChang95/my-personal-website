@@ -1,3 +1,4 @@
+import { Button, Divider, Stack } from '@mui/material';
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
@@ -10,14 +11,20 @@ const capitalizeFirstWord = (menuName: string) => {
 }
 
 const Layout = (props: Props) => {
-    const menuElementList = props.menuList.map(v => <li key={v}><Link to={'/' + v.toLowerCase()}>{capitalizeFirstWord(v)}</Link></li>)
+    const menuButtonList = props.menuList.map(v => <Button key={v} component={Link} to={'/' + v.toLowerCase()}>{capitalizeFirstWord(v)}</Button>)
 
     return (
         <div>
-            <nav>
-                <ul>{menuElementList}</ul>
-            </nav>
-            <hr />
+            <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                my={1}
+            >
+                {menuButtonList}
+            </Stack>
+            <Divider />
             <Outlet />
         </div>
     );
