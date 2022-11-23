@@ -1,7 +1,21 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 
-export default function Paper() {
+interface Props {
+    paperList: string[]
+}
+
+const listPaperItem = (paperList: string[]) => {
+    return paperList.map(v =>
+        <ListItem divider>
+            <ListItemButton>
+                <ListItemText primary={v} />
+            </ListItemButton>
+        </ListItem>
+    )
+}
+
+export default function Paper(props: Props) {
     return (
         <Box
             sx={{
@@ -23,7 +37,9 @@ export default function Paper() {
                 The following is my paper.
             </Typography>
             <Box px={10} py={5}>
-
+                <List>
+                    {listPaperItem(props.paperList)}
+                </List>
             </Box>
         </Box>
     );

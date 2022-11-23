@@ -1,7 +1,21 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 
-export default function Competition() {
+interface Props {
+    competitionList: string[]
+}
+
+const listCompetitionItem = (competitionList: string[]) => {
+    return competitionList.map(v =>
+        <ListItem divider>
+            <ListItemButton>
+                <ListItemText primary={v} />
+            </ListItemButton>
+        </ListItem>
+    )
+}
+
+export default function Competition(props: Props) {
     return (
         <Box
             sx={{
@@ -23,7 +37,9 @@ export default function Competition() {
                 The following is my competition.
             </Typography>
             <Box px={10} py={5}>
-
+                <List>
+                    {listCompetitionItem(props.competitionList)}
+                </List>
             </Box>
         </Box>
     );

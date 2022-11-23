@@ -24,8 +24,8 @@ const menuList: { [key: string]: React.ReactNode} = {
   project: <Project projectList={jsonData.project} />,
   training: <Training trainingList={jsonData.training} />,
   education: <Education educationList={jsonData.education} />,
-  competition: <Competition />,
-  paper: <Paper />
+  competition: <Competition competitionList={jsonData.competition}/>,
+  paper: <Paper paperList={jsonData.paper}/>
 }
 
 const App = () => {
