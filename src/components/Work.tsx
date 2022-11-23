@@ -62,11 +62,6 @@ export default function Work(props: Props) {
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
                 The following is my work experience.
             </Typography>
-            {/* {sx={{
-                    [`& .${timelineOppositeContentClasses.root}`]: {
-                        flex: 0.2,
-                    },
-                }}} */}
             <Box px={10} py={5}>
                 <Timeline 
                     sx={{
