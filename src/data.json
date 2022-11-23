@@ -21,15 +21,52 @@
         }
     ],
     "skill": {
-        "Backend": {
-
-        },
-        "Frontend": {
-
-        },
-        "DevOps": {
-
-        }
+        "Backend": [
+            "Typescript",
+            "Node.js",
+            "Go",
+            "Python",
+            "Flask",
+            "Java",
+            "PHP"
+        ],
+        "Frontend": [
+            "React",
+            "JavaScript",
+            "JQuery",
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "DevOps": [
+            "Shell Script",
+            "GitLab CI",
+            "GitHub Actions",
+            "Elasticsearch",
+            "Docker",
+            "Jenkins"
+        ],
+        "Database": [
+            "MySQL",
+            "MariaDB",
+            "PostgreSQL",
+            "PhpMyAdmin"
+        ],
+        "Web Server": [
+            "Nginx",
+            "Apache",
+            "Glassfish"
+        ],
+        "Cloud Platform": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "VMware",
+            "OpenStack"
+        ],
+        "Tool": [
+            "Grafana"
+        ]
     },
     "work": [
         {
