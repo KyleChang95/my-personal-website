@@ -19,7 +19,7 @@ import jsonData from './data.json'
 
 const menuList: { [key: string]: React.ReactNode} = {
   profile: <Profile />,
-  skill: <Skill />,
+  skill: <Skill skillList={jsonData.skill} />,
   work: <Work workList={jsonData.work} />,
   project: <Project />,
   training: <Training />,

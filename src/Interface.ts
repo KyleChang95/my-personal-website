@@ -6,3 +6,7 @@ export interface WorkModel {
     image: string;
     description: string;
 }
+
+export interface SkillModel {
+    [key: string]: string[]
+}
