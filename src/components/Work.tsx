@@ -1,20 +1,23 @@
 import React from 'react';
 import { WorkModel } from '../Interface'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent, { timelineOppositeContentClasses } from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
+import { Box, Typography } from '@mui/material';
+import { 
+    Timeline,
+    TimelineItem,
+    TimelineSeparator,
+    TimelineConnector,
+    TimelineContent,
+    TimelineOppositeContent,
+    TimelineDot,
+    timelineOppositeContentClasses
+} from '@mui/lab';
 
 interface Props {
     workList: WorkModel[]
 }
 
 const convertToTimelineItem = (workList: WorkModel[]) => {
-    return workList.map(v => 
+    return workList.map(v =>
         <TimelineItem>
             <TimelineOppositeContent color="text.secondary">
                 {v.start}
@@ -40,15 +43,42 @@ const convertToTimelineItem = (workList: WorkModel[]) => {
 
 const Work = (props: Props) => {
     return (
-        <Timeline
+        <Box
             sx={{
-                [`& .${timelineOppositeContentClasses.root}`]: {
-                flex: 0.2,
-                },
+                bgcolor: 'background.paper',
+                py: 5,
+                alignItem: 'center'
             }}
         >
-            {convertToTimelineItem(props.workList)}
-        </Timeline>
+            <Typography
+                component="h1"
+                variant="h2"
+                align="center"
+                color="text.primary"
+                gutterBottom
+            >
+                Work
+            </Typography>
+            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                The following is my work experience.
+            </Typography>
+            {/* {sx={{
+                    [`& .${timelineOppositeContentClasses.root}`]: {
+                        flex: 0.2,
+                    },
+                }}} */}
+            <Box px={40} py={5}>
+                <Timeline 
+                    sx={{
+                        [`& .${timelineOppositeContentClasses.root}`]: {
+                            flex: 0.5,
+                        },
+                    }}
+                >
+                    {convertToTimelineItem(props.workList)}
+                </Timeline>
+            </Box>
+        </Box>
     );
 }
 
