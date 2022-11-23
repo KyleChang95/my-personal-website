@@ -105,6 +105,7 @@
     ],
     "education": [
         {
+            "image": "img/NPUST.png",
             "school": "National Pingtung University of Science and Technology",
             "degree": "master",
             "department": "Information Management Institute",
@@ -113,6 +114,7 @@
             "status": "graduate"
         },
         {
+            "image": "img/NPUST.png",
             "school": "National Pingtung University of Science and Technology",
             "degree": "bachelor",
             "department": "Information Management",
@@ -121,6 +123,7 @@
             "status": "graduate"
         },
         {
+            "image": "img/NSSIVS.jpg",
             "school": "National Shiou Shuei Senior Industrial Vocational High School",
             "degree": "vocational",
             "department": "Electrical Engineering",

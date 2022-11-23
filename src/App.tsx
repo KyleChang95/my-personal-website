@@ -23,7 +23,7 @@ const menuList: { [key: string]: React.ReactNode} = {
   work: <Work workList={jsonData.work} />,
   project: <Project projectList={jsonData.project} />,
   training: <Training trainingList={jsonData.training} />,
-  education: <Education />,
+  education: <Education educationList={jsonData.education} />,
   competition: <Competition />,
   paper: <Paper />
 }

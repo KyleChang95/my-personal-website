@@ -16,3 +16,13 @@ export interface TrainingModel {
     date: string;
     image: string;
 }
+
+export interface EducationModel {
+    image: string
+    school: string;
+    degree: string;
+    department: string;
+    start: string;
+    end: string;
+    status: string;
+}
