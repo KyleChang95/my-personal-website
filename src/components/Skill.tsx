@@ -55,7 +55,7 @@ export default function Skill(props: Props) {
                 justifyContent="center"
                 alignItems="flex-start"
                 spacing={4}
-                px={40}
+                px={10}
                 py={5}
             >
                 {Object.keys(props.skillList).map(v => {

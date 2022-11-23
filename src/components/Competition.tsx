@@ -22,7 +22,7 @@ export default function Competition() {
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
                 The following is my competition.
             </Typography>
-            <Box px={40} py={5}>
+            <Box px={10} py={5}>
 
             </Box>
         </Box>

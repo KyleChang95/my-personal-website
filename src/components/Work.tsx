@@ -67,7 +67,7 @@ export default function Work(props: Props) {
                         flex: 0.2,
                     },
                 }}} */}
-            <Box px={40} py={5}>
+            <Box px={10} py={5}>
                 <Timeline 
                     sx={{
                         [`& .${timelineOppositeContentClasses.root}`]: {
