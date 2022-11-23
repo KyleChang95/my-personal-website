@@ -88,9 +88,19 @@
     ],
     "training": [
         {
-            "name": "",
-            "date": "",
-            "image": ""
+            "name": "Architecting on AWS",
+            "date": "2021-01-29",
+            "image": "img/architecting_on_aws.png"
+        },
+        {
+            "name": "Developing on AWS",
+            "date": "2021-03-19",
+            "image": "img/developing_on_aws.png"
+        },
+        {
+            "name": "DevOps Engineering on AWS",
+            "date": "2021-03-26",
+            "image": "img/devops_engineering_on_aws.png"
         }
     ],
     "education": [

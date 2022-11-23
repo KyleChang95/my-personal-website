@@ -10,3 +10,9 @@ export interface WorkModel {
 export interface SkillModel {
     [key: string]: string[]
 }
+
+export interface TrainingModel {
+    name: string;
+    date: string;
+    image: string;
+}
