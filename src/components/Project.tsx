@@ -1,7 +1,21 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 
-export default function Project() {
+interface Props {
+    projectList: string[]
+}
+
+const listProjectItem = (projectList: string[]) => {
+    return projectList.map(v =>
+        <ListItem divider>
+            <ListItemButton>
+                <ListItemText primary={v} />
+            </ListItemButton>
+        </ListItem>
+    )
+}
+
+export default function Project(props: Props) {
     return (
         <Box
             sx={{
@@ -23,6 +37,9 @@ export default function Project() {
                 The following is my project.
             </Typography>
             <Box px={10} py={5}>
+                <List>
+                    {listProjectItem(props.projectList)}
+                </List>
             </Box>
         </Box>
     );
