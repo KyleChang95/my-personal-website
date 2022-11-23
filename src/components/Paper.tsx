@@ -17,10 +17,10 @@ export default function Paper() {
                 color="text.primary"
                 gutterBottom
             >
-                Project
+                Paper
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                The following is my project.
+                The following is my paper.
             </Typography>
             <Box px={10} py={5}>
 
