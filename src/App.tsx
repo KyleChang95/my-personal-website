@@ -1,20 +1,20 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 // Roboto font
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
-import Navbar from "./components/Navbar";
-import Competition from "./components/Competition";
-import Education from "./components/Education";
-import Paper from "./components/Paper";
-import Profile from "./components/Profile";
-import Project from "./components/Project";
-import Skill from "./components/Skill";
-import Training from "./components/Training";
-import Work from "./components/Work";
-import jsonData from "./data.json";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Navbar from './components/Navbar';
+import Competition from './components/Competition';
+import Education from './components/Education';
+import Paper from './components/Paper';
+import Profile from './components/Profile';
+import Project from './components/Project';
+import Skill from './components/Skill';
+import Training from './components/Training';
+import Work from './components/Work';
+import jsonData from './data.json';
 
 const menuList: { [key: string]: React.ReactNode } = {
   profile: <Profile />,
